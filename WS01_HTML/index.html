@@ -14,8 +14,8 @@
                 Here, I'm practicing the use of HTML, by designing a web page. Later, also more CSS and Javascript. <br>
                 It is interesting, fun and undoubtedly useful!</p>
             <figure>
-                <img src="C:\Users\pette\Pictures\Saved Pictures\Harjoitus Kuva.jpg" 
-                alt="Petteri Elf." style="width:250px; height:300px;">
+                <img src="C:\Users\pette\Documents\Laurea\Syksy 2025\Websivuston_kehittaminen_Syksy_2025\Websivuston_kehittaminen_Syksy_2025\styles\images\PE_Image.jpg" 
+                alt="Petteri Elf." style="width:250px; height:auto;">
             </figure>
 
             <h2>My current hobbies</h2>
@@ -32,13 +32,15 @@
         
             <h3>Here's an example of a hyperlink.</h3>
             <nav>
-                <p>I'm currently studying information technology at Laurea. <br>
+                <p>I'm currently studying information technology at Laurea university of applied sciences. <br>
                 You can get more information about <a href="https://www.laurea.fi/en/">Laurea</a> from this link.</p>
             </nav>
         
         <hr>
         
         <h3>Here's an example of a table.</h3>
+        <p>While table's visual appearance ought to be edited with CSS, as is suggested by the validator, <br>
+          I chose to edit the visuals a bit in HTML. I'll configure the visuals later in CSS, once I get to that.</p>
         
         <table border="1">
             <tr>
@@ -60,13 +62,28 @@
         
         <hr>
         
-        <h3>Here are the makings of a form.</h3>
+        <h3>Form</h3>
+        <p>Here are the makings of a form mock up.</p>
         <form>
+            <label for="Feedback">Enter your feedback here:</label><br> 
+            <textarea name="feedback" rows="5"
+            cols="40" id="feedback" ></textarea><br><br>
+
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
+            <input type="text" id="name" name="name" placeholder="John Smith"><br><br>
+
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
-            <input type="submit" value="Submit">
+            <input type="email" id="email" name="email" placeholder="john.smith@mail.com"><br><br>
+            
+            <input type="submit" value="Submit"><br><br>
+            
+            <label>Shall we move on to the next module?</label><br><br>
+            <input type="radio" name="replyanswer" value="Yes">
+            <label>Yes</label>
+          
+            <input type="radio" name="replyanswer" value="No"> 
+            <label>No</label>
+            
         </form>
     </body>
 </html>
