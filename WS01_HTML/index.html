@@ -1,61 +1,72 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WS01_HTML</title>
-  </head>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My First HTML Page</title>
+    </head>
+    
+    <body>
+        <main>
+            <h1>Petteri Elf</h1>
+            
+            <p>Hello. I'm a regular Finnish bloke, currently living in Vantaa. <br>
+                Here, I'm practicing the use of HTML, by designing a web page. Later, also more CSS and Javascript. <br>
+                It is interesting, fun and undoubtedly useful!</p>
+            <figure>
+                <img src="C:\Users\pette\Pictures\Saved Pictures\Harjoitus Kuva.jpg" 
+                alt="Petteri Elf." style="width:250px; height:300px;">
+            </figure>
 
-  <body>
-    <h1>Petteri Elf</h1>
-    <p>
-      Hello. I'm a regular Finnish bloke. <br />
-      I'm currently learning Website development at Laurea university of applied
-      sciences.
-    </p>
-    <img src="C:\Users\pette\OneDrive\Tiedostot\Laurea\Syksy_2025\Websivuston_Kehittäminen\Repositorio\Websivuston_kehittaminen_Syksy_2025\styles\images\PE_Image.jpg" alt="Description of image" /
-    style="width:300px; height:auto;">
-
-    <hr />
-    <h2>My Hobbies</h2>
-    <ul>
-      <li>Playing the piano, not very well though</li>
-      <li>Studying Greek</li>
-      <li>Walking in nature</li>
-      <li>Gaming</li>
-      <li>Painting and drawing</li>
-    </ul>
-
-    <hr />
-    <section>
-      <h3>About Laurea</h3>
-        <p
-      <a href="https://www.laurea.fi">Visit Laurea</a>
-    </section>
-
-    <table>
-      <tr>
-        <th>Header 1</th>
-        <th>Header 2</th>
-        <th>Header 3</th>
-      </tr>
-      <tr>
-        <td>Row 1, Cell 1</td>
-        <td>Row 1, Cell 2</td>
-        <td>Row 1, Cell 3</td>
-      </tr>
-      <tr>
-        <td>Row 2, Cell 1</td>
-        <td>Row 2, Cell 2</td>
-        <td>Row 2, Cell 2</td>
-      </tr>
-    </table>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" /><br /><br />
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" /><br /><br />
-      <input type="submit" value="Submit" />
-    </form>
-  </body>
+            <h2>My current hobbies</h2>
+            
+            <ul style="list-style-type: square;">
+                <li>Playing the piano - not very well</li>
+                <li>Painting and drawing, traditionally and digitally</li>
+                <li>Studying Greek</li>
+                <li>Various games</li>
+                <li>Walking in nature</li>
+            </ul>
+        </main>
+        <hr>
+        
+            <h3>Here's an example of a hyperlink.</h3>
+            <nav>
+                <p>I'm currently studying information technology at Laurea. <br>
+                You can get more information about <a href="https://www.laurea.fi/en/">Laurea</a> from this link.</p>
+            </nav>
+        
+        <hr>
+        
+        <h3>Here's an example of a table.</h3>
+        
+        <table border="1">
+            <tr>
+                <th bgcolor="red">Red</th>
+                <th bgcolor="lightblue">Blue</th>
+                <th bgcolor="yellow">Yellow</th>
+            </tr>
+            <tr >
+                <td>Tomato</td>
+                <td>Blueberry</td>
+                <td>Lemon</td>
+            </tr>
+            <tr>
+                <td>Strawberry</td>
+                <td>Sky</td>
+                <td>Banana</td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <h3>Here are the makings of a form.</h3>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
 </html>
