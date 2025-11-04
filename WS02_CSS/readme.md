@@ -1,1 +1,1 @@
-This is Website Development ND00CC04-3002 Workshop 2 exercise.
+This is Website Development ND00CC04-3002 Workshop 2 exercise. If HTML is the basic architecture of a house, CSS is the interior design.

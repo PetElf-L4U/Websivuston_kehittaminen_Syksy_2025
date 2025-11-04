@@ -1,11 +1,95 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WS02_CSS</title>
-</head>
-<body>
-    <h1>WS02_CSS</h1>
-</body>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My First HTML Page</title>
+        <style>h1 {color:whitesmoke;}</style>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <main>
+            <h1 class="heading">Welcome to my first webpage!</h1>
+            <div>
+            <p>Hello. I'm Petteri, a regular Finnish bloke, currently living in Vantaa.
+                Here, I'm practicing the use of HTML, by designing a web page. Later, also more CSS and Javascript.
+                It is interesting, fun and undoubtedly useful!</p>
+            </div>
+    
+                <figure>
+                <img src="styles/images/PE_Image.jpg"
+                alt="Petteri Elf." style="width:250px; height:auto;">
+                </figure>
+          
+           <div>
+            <h2 class="heading">My current hobbies</h2>
+            
+            <ul style="list-style-type: square;">
+                <li>Playing the piano - not very well</li>
+                <li>Painting and drawing, traditionally and digitally</li>
+                <li>Studying Greek</li>
+                <li>Various games</li>
+                <li>Walking in nature</li>
+            </ul>
+            </div>
+        </main>
+        <div>
+            <h3 class="heading">Here's an example of a hyperlink.</h3>
+            <nav>
+                <p>I'm currently studying information technology at Laurea university of applied sciences.</p>
+                <p>You can get more information about <a href="https://www.laurea.fi/en/">Laurea</a> from this link.</p>
+            </nav>
+        </div>
+        
+        <h3 class="heading">Here's an example of a table.</h3>
+        <p>While table's visual appearance ought to be edited with CSS, as is suggested by the validator, <br>
+          I chose to edit the visuals a bit in HTML. I'll configure the visuals later in CSS, once I get to that.</p>
+        <div>
+        <table>
+            <tr>
+                <th> Red</th>
+                <th> Blue</th>
+                <th> Yellow</th>
+            </tr>
+            <tr >
+                <td>Tomato</td>
+                <td>Blueberry</td>
+                <td>Lemon</td>
+            </tr>
+            <tr>
+                <td>Strawberry</td>
+                <td>Sky</td>
+                <td>Banana</td>
+            </tr>
+        </table>
+        </div>
+        <hr>
+        
+        <h3 class="heading">Form</h3>
+        <p>Here are the makings of a form mock up.</p>
+        <div>
+        <form>
+            <label for="feedback">Enter your feedback here:</label><br> 
+            <textarea name="feedback" rows="5"
+            cols="40" id="feedback" ></textarea><br><br>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Smith"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="john.smith@mail.com"><br><br>
+            
+            <input type="submit" value="Submit"><br><br>
+            
+            <label>Shall we move on to the next module?</label><br><br>
+            <input type="radio" name="replyanswer" value="Yes">
+            <label>Yes</label>
+          
+            <input type="radio" name="replyanswer" value="No"> 
+            <label>No</label>
+            
+        </form>
+        </div>
+    </body>
 </html>
