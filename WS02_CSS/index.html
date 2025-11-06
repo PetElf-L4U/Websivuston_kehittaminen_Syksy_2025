@@ -1,95 +1,144 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My First HTML Page</title>
-        <style>h1 {color:whitesmoke;}</style>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    
-    <body>
-        <main>
-            <h1 class="heading">Welcome to my first webpage!</h1>
-            <div>
-            <p>Hello. I'm Petteri, a regular Finnish bloke, currently living in Vantaa.
-                Here, I'm practicing the use of HTML, by designing a web page. Later, also more CSS and Javascript.
-                It is interesting, fun and undoubtedly useful!</p>
-            </div>
-    
-                <figure>
-                <img src="styles/images/PE_Image.jpg"
-                alt="Petteri Elf." style="width:250px; height:auto;">
-                </figure>
-          
-           <div>
-            <h2 class="heading">My current hobbies</h2>
-            
-            <ul style="list-style-type: square;">
-                <li>Playing the piano - not very well</li>
-                <li>Painting and drawing, traditionally and digitally</li>
-                <li>Studying Greek</li>
-                <li>Various games</li>
-                <li>Walking in nature</li>
-            </ul>
-            </div>
-        </main>
-        <div>
-            <h3 class="heading">Here's an example of a hyperlink.</h3>
-            <nav>
-                <p>I'm currently studying information technology at Laurea university of applied sciences.</p>
-                <p>You can get more information about <a href="https://www.laurea.fi/en/">Laurea</a> from this link.</p>
-            </nav>
-        </div>
-        
-        <h3 class="heading">Here's an example of a table.</h3>
-        <p>While table's visual appearance ought to be edited with CSS, as is suggested by the validator, <br>
-          I chose to edit the visuals a bit in HTML. I'll configure the visuals later in CSS, once I get to that.</p>
-        <div>
-        <table>
-            <tr>
-                <th> Red</th>
-                <th> Blue</th>
-                <th> Yellow</th>
-            </tr>
-            <tr >
-                <td>Tomato</td>
-                <td>Blueberry</td>
-                <td>Lemon</td>
-            </tr>
-            <tr>
-                <td>Strawberry</td>
-                <td>Sky</td>
-                <td>Banana</td>
-            </tr>
-        </table>
-        </div>
-        <hr>
-        
-        <h3 class="heading">Form</h3>
-        <p>Here are the makings of a form mock up.</p>
-        <div>
-        <form>
-            <label for="feedback">Enter your feedback here:</label><br> 
-            <textarea name="feedback" rows="5"
-            cols="40" id="feedback" ></textarea><br><br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Web Page</title>
+    <style>
+      h1 {
+        color: whitesmoke;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="John Smith"><br><br>
+  <body>
+    <main>
+      <h1
+        title="Hi. I've changed the color of this heading, using internal CSS."
+        class="heading"
+      >
+        Welcome to my first web page!
+      </h1>
+      <div>
+        <p>
+          Greetings. I'm Petteri, a regular Finnish bloke, currently living in
+          Vantaa. Here, I'm practicing the use of <b>HTML</b> and <b>CSS</b>, by
+          designing an HTML web page. Later, I'll also delve into
+          <b>Javascript</b>. It is interesting, fun and undoubtedly useful!
+          Seeing it all slowly come together is satisfying.
+        </p>
+      </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="john.smith@mail.com"><br><br>
-            
-            <input type="submit" value="Submit"><br><br>
-            
-            <label>Shall we move on to the next module?</label><br><br>
-            <input type="radio" name="replyanswer" value="Yes">
-            <label>Yes</label>
-          
-            <input type="radio" name="replyanswer" value="No"> 
-            <label>No</label>
-            
-        </form>
-        </div>
-    </body>
+      <figure>
+        <img
+          title="That's me, Petteri."
+          src="styles/images/PE_Image.jpg"
+          alt="Petteri Elf."
+          style="width: 250px; height: auto"
+        />
+      </figure>
+
+      <div class="container">
+        <h2 class="heading">My current hobbies</h2>
+
+        <ul class="cUL" style="list-style-type: square">
+          <li>Playing the piano - self-taught</li>
+          <li>Painting and drawing, traditionally and digitally</li>
+          <li>Studying Greek</li>
+          <li>Various games</li>
+          <li>Walking in nature</li>
+        </ul>
+      </div>
+    </main>
+    <div>
+      <h3 class="heading">Here's an example of a hyperlink.</h3>
+      <nav>
+        <p>
+          I'm currently studying information technology at Laurea university of
+          applied sciences.<br />
+          You can get more information about
+          <a href="https://www.laurea.fi/en/">Laurea</a> from this link.
+        </p>
+      </nav>
+    </div>
+    <div>
+      <h3 class="heading">
+        Here's I've modified the paragraph using <b>inline CSS</b>.
+      </h3>
+      <p style="color: orange; font-size: 2em; font-style: italic">
+        This paragraph displays a few changes done within the HTML element.
+      </p>
+    </div>
+    <div>
+      <h3 class="heading">My language skills.</h3>
+      <p>
+        I've studied a few languages in my life, albeit most are either basic
+        level or degraded due to lack of use. <br />
+        Regardless, I have enjoyed learning about different cultures and their
+        languages. <br />
+        I have a few international friends with whom I talk every now and
+        then.
+      </p>
+      <table
+        class="center"
+        style="
+          background-color: rgb(180, 180, 180);
+          margin-top: 50px;
+          border: black;
+        "
+      >
+        <tr>
+          <th style="color: red">Red</th>
+          <th style="color: blue">Blue</th>
+          <th style="color: yellow">Yellow</th>
+        </tr>
+        <tr>
+          <td>Tomato</td>
+          <td>Blueberry</td>
+          <td>Lemon</td>
+        </tr>
+        <tr>
+          <td>Strawberry</td>
+          <td>Sky</td>
+          <td>Banana</td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <h3 class="heading">Form</h3>
+      <p>Here are the makings of a form mock up.</p>
+      <form>
+        <label for="feedback">Enter your feedback here:</label><br />
+        <textarea name="feedback" rows="5" cols="40" id="feedback"></textarea
+        ><br /><br />
+
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="John Smith"
+        /><br /><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="john.smith@email.com"
+        /><br /><br />
+
+        <input class="button" type="submit" value="Submit" /><br /><br />
+
+        <label>Shall we move on to the next module?</label><br /><br />
+        <input type="radio" name="replyanswer" value="Yes" />
+        <label>Yes</label>
+
+        <input type="radio" name="replyanswer" value="No" />
+        <label>No</label>
+      </form>
+    </div>
+  </body>
 </html>

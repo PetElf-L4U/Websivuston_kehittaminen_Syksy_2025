@@ -1,38 +1,88 @@
-p {
-    color:whitesmoke;
-    margin: auto;
-}
 body {
     background-color: rgb(90, 90, 90);
+}
+div {
+    padding: 2%; margin: 2%; 
+    background-color: rgb(145, 145, 145);
+    border: 3px solid rgb(80, 80, 80);
+    border-radius: 15px;
+}
+div.container {
+    text-align: center;
 }
 .heading {
     color:whitesmoke;
     text-align: center;
+    font-size: 2em;
+}
+ul.cUL {
+    display: inline-block;
+    text-align: left;
+    border:solid;
+    border-color: lightblue; 
+    border-width: 1px;
+    border-radius: 15px;
+    padding: 2em;
+
 }
 li {
     color:whitesmoke;
+    font-size: 1.3em;
 }
-div {
-    padding: 3%; margin: 2%; 
-    background-color: rgb(145, 145, 145);
-    border: 3px solid rgb(80, 80, 80)
+
+ p {
+    color:whitesmoke;
+    margin: 5px;
+    font-size: 1.3em;
+    padding: 2%;
+    border:solid;
+    border-color: lightblue; 
+    border-width: 1px;
+    border-radius: 15px;
+    text-align: center;   
 }
 
 img {
         display: block; 
         margin: auto;
         width: 50%;
-        border: 10px solid rgb(80, 80, 80);
-        border-radius: 5px;
-        border-style:ridge;
-        
+        border: 20px solid rgb(145, 145, 145);
+        border-radius: 15px; 
+        outline: 3px solid rgb(80, 80, 80);
 }
-th {
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
     color:brown;
 }
+
 form {
     border: 3px solid rgb(80, 80, 80);
+    border-radius: 15px;
     margin: 1px;
     padding: 3%;
     
+}
+
+label {
+    color:whitesmoke;
+    margin: auto;
+    font-size: 1.3em;
+}
+
+input {
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+input.button {
+    background-color:gold;
+}
+
+b {
+    color:gold;
 }
