@@ -32,7 +32,7 @@ li {
 
  p {
     color:whitesmoke;
-    margin: 5px;
+    margin: 1%;
     font-size: 1.3em;
     padding: 2%;
     border:solid;
@@ -56,31 +56,49 @@ img {
     margin-right: auto;
 }
 
-td {
-    color:brown;
+table{
+    width: 100%;
+    border-collapse: collapse;
 }
 
-form {
-    border: 3px solid rgb(80, 80, 80);
-    border-radius: 15px;
-    margin: 1px;
-    padding: 3%;
+th, td {
+      border: 1px solid rgb(80, 80, 80);
+      padding: 8px;
+      text-align: center;
+    }
     
+th {
+      background-color: #f2f2f2;
+    }
+
+form {
+    border: 1px solid lightblue;
+    border-radius: 15px;
+    margin: 1rem;
+    padding: 2rem;
 }
 
 label {
     color:whitesmoke;
-    margin: auto;
+    margin: 2rem;
     font-size: 1.3em;
 }
 
 input {
     font-size: 1.2em;
-    border-radius: 5px;
+    border-radius: 4px;
+    border:none;
+    padding: 10px 24px;
+    cursor:pointer;
 }
 
-input.button {
+input[type="submit"]{
     background-color:gold;
+    padding: 10px 24px;
+}
+
+input[type="submit"]:hover {
+    background-color:rgb(128, 55, 55);
 }
 
 b {
