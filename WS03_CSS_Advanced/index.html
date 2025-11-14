@@ -30,20 +30,29 @@
           Seeing it all slowly come together is satisfying.
         </p>
       </div>
-<div class="animation-box"></div>
+      
+      <!--The animated "Eyeball watching over the site."-->
+      <div class="animation-box">
+        <div class="iris"> 
+          <div class="pupil">  
+          </div> 
+        </div>
+      </div>
+
       <figure>
         <img
           title="That's me, Petteri."
           src="styles/images/PE_Image.jpg"
           alt="Petteri Elf."
           style="width: 250px; height: auto"
+          class="filter-image"
         >
       </figure>
 
       <div class="container">
         <h2 class="heading">My current hobbies</h2>
 
-        <ul class="cUL" style="list-style-type: square">
+        <ul class="pseudo-list" style="list-style-type: square">
           <li>Playing the piano - self-taught</li>
           <li>Painting and drawing, traditionally and digitally</li>
           <li>Studying Greek</li>
@@ -80,7 +89,7 @@
         Simultaneously, I'm practicing the use of <b>tables</b> in my web site.
         <br>
       </p>
-      <table>
+      <table class="pseudo-list">
         <tr>
           <th>Language</th>
           <th>Fluency Self-Evaluation</th>
@@ -157,7 +166,7 @@
 
         <label for="email">Email:</label>
         <input
-          type="email"
+          type="text"
           id="email"
           name="email"
           placeholder="john.smith@email.com"
