@@ -234,3 +234,21 @@ a:hover {
     color: maroon;
 }
 
+/*---Blockquote---*/
+
+.quote {
+        position: relative;
+        padding-left: 40px;
+        font-style: italic;
+        color:whitesmoke;
+        font-size:1.3em;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 60px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: gold;
+      }
