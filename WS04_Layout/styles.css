@@ -310,3 +310,26 @@ a:hover {
         top: 0;
         color: gold;
       }
+
+/*---Responsive Box---*/
+
+      .responsive-box {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 800px) {
+    .responsive-box {
+      background-color: gold;
+      color: maroon;
+      font-size: 1.3em;
+    }
+  }
+  
+  @media (min-width: 801px) {
+    .responsive-box {
+      background-color: maroon;
+      color:gold;
+      font-size: 1.3em;
+    }
+  }
