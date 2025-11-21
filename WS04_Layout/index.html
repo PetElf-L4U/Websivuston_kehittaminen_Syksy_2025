@@ -16,13 +16,13 @@
 <!--Page Contents-->
 
 <body>
-    <!--Header of the Page-->
+  <!--Header of the Page-->
 
-    <header>
-      <h1>
-        Welcome to my first web page!
-      </h1>
-      
+  <header>
+    <h1>
+      Welcome to my first web page!
+    </h1>
+    <aside>
       <nav>
         <ul>
           <li><a href="#about">About Me</a></li>
@@ -30,40 +30,43 @@
           <li><a href="#contact">Contact (<i>no functionality at the moment</i>)</a></li>
         </ul>
       </nav>
-    </header>
-    <!--Introduction-->
- <main>
+    </aside>
+  </header>
+
+  <!--Flex Boxes-->
+
+  <main>
+    <div class="responsive-box">
+      This box will change color when it is scaled to 800 pixels or narrower
+    </div>
+
     <div class="flex-container">
-      <div 
-        class="box">Mystery Box
+      <div class="box">Mystery Box
         <p>What is inside? Beans? Diamonds?</p>
       </div>
-      <div 
-        class="box">Coming Soon
+      <div class="box">Coming Soon
         <p>This one will be the crown jewel, perhaps.</p>
       </div>
-      <div 
-        class="box">I wonder what this one will be
+      <div class="box">I wonder what this one will be
         <p>There will be something added here eventually.</p>
       </div>
-
     </div>
 
     <div class="grid-container">
       <div class="grid-item">
-      
+
         <!--About Me-->
- 
+
         <section id="about">
-         <h2 class="heading">About Me</h2>
-        <p>
-          Greetings. I'm Petteri, a regular Finnish bloke, currently living in
-          Vantaa. Here, I'm practicing the use of <b>HTML</b> and <b>CSS</b>, by
-          designing an HTML web page. Later, I'll also delve into
-          <b>Javascript</b>. It is interesting, fun and undoubtedly useful!
-          Seeing it all slowly come together is satisfying.
-        </p>
-      
+          <h2 class="heading">About Me</h2>
+          <p>
+            Greetings. I'm Petteri, a regular Finnish bloke, currently living in
+            Vantaa. Here, I'm practicing the use of <b>HTML</b> and <b>CSS</b>, by
+            designing an HTML web page. Later, I'll also delve into
+            <b>Javascript</b>. It is interesting, fun and undoubtedly useful!
+            Seeing it all slowly come together is satisfying.
+          </p>
+
         </section>
 
         <!--The animated "Eyeball watching over the site. Don't be spooked.-->
@@ -97,12 +100,12 @@
           <li>Various games</li>
           <li>Walking in nature</li>
         </ul>
-      
 
 
-      <!--Hyperlink-->
 
-      
+        <!--Hyperlink-->
+
+
         <h3 class="heading">My current studies</h3>
         <nav>
           <p>
@@ -123,38 +126,56 @@
         <p style="color: orange; font-size: 2em; font-style: italic">
           This paragraph displays a few changes done within the HTML element.
         </p>
-
+        <p>Head is feeling a bit empty, so I'll just add a bit of rambling filler text.</p>
+        <p>I used to play football. It began around elementary school, where I played with many of my classmates.
+          I look back to this time fondly, where we took part in many tournaments and practice games alike.
+          <br><br>The training became a bit more demanding when I reached secondary school. We fused with another team,
+          coaching changed, with more intense training and extra rules such as offsides,
+          which seemed quite strange to a 12 year old boy. I also had quite a growth spurt at the time, which made my
+          knees ache,
+          which partially affected my decision to stop. Overall the intensive training all of the sudden ate the fun,
+          more casual feeling of football, so I ended up quitting the hobby.
+          Football is a great sport, albeit I don't really follow or watch it, unlike many sportsfans.
+        </p>
       </div>
 
       <!--Blockquotes-->
- <section id="quotes">
-      <div class="grid-item">
-        <h3 class="heading">Some Inspiring Quotes</h3>
+      <section id="quotes">
+        <div class="grid-item">
+          <h3 class="heading">Some Inspiring Quotes</h3>
           <blockquote class="quote">
-          Climb mountains not so the world can see you, but so you can see the world. <br>
-          <b>~ David McCullough Jr.</b></blockquote>
+            Climb mountains not so the world can see you, but so you can see the world. <br>
+            <b>~ David McCullough Jr.</b>
+          </blockquote>
           <blockquote class="quote">
-          Always be a first version of yourself and not a second rate version of someone else. <br>
-          <b>~ Judy Garland</b></blockquote>
+            Always be a first version of yourself and not a second rate version of someone else. <br>
+            <b>~ Judy Garland</b>
+          </blockquote>
           <blockquote class="quote">
-          Failure I can live with. Not trying is what I can't handle.  <br> 
-          <b>~ Sanya Richards-Ross</b></blockquote>
+            Failure I can live with. Not trying is what I can't handle. <br>
+            <b>~ Sanya Richards-Ross</b>
+          </blockquote>
           <blockquote class="quote">
-            Until you value yourself, you won’t value your time. 
+            Until you value yourself, you won’t value your time.
             Until you value your time, you will not do anything with it.<br>
-        <b>~ M. Scott Peck</b></blockquote>
-        <blockquote class="quote">
-          If you get tired, learn to rest, not to quit. <br>
-        <b>~ Banksy</b></blockquote>
-        <blockquote class="quote">
-          The best way to get started is to quit talking and begin doing. <br>
-        <b>~ Walt Disney</b></blockquote>
-        <blockquote class="quote">It is during our darkest moments that we must focus to see the light.<br>
-        <b>~ Aristotle</b></blockquote>
-        <blockquote class="quote">We can't help everyone, but everyone can help someone.<br>
-        <b>~ Ronald Reagan</b></blockquote>
-      </div>
-</section>
+            <b>~ M. Scott Peck</b>
+          </blockquote>
+          <blockquote class="quote">
+            If you get tired, learn to rest, not to quit. <br>
+            <b>~ Banksy</b>
+          </blockquote>
+          <blockquote class="quote">
+            The best way to get started is to quit talking and begin doing. <br>
+            <b>~ Walt Disney</b>
+          </blockquote>
+          <blockquote class="quote">It is during our darkest moments that we must focus to see the light.<br>
+            <b>~ Aristotle</b>
+          </blockquote>
+          <blockquote class="quote">We can't help everyone, but everyone can help someone.<br>
+            <b>~ Ronald Reagan</b>
+          </blockquote>
+        </div>
+      </section>
       <!--A Table-->
 
       <div class="grid-item">
@@ -222,42 +243,37 @@
           </tr>
         </table>
       </div>
-    
 
-    <!--A Form-->
 
-    <div class="grid-item">
-      <h3 class="heading">Form</h3>
-      <p>
-        Here are the makings of a form mock up. It's not much to look at, but it
-        is certainly adding that 'something' to the site.
-      </p>
-      <form>
-        <label for="feedback">Enter your feedback here:</label><br>
-        <textarea name="feedback" rows="5" cols="40" id="feedback"></textarea>
-        <br><br>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="John Smith"><br><br>
+      <!--A Form-->
 
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" placeholder="john.smith@email.com"><br><br>
+      <div class="grid-item">
+        <h3 class="heading">Form</h3>
+        <p>
+          Here are the makings of a form mock up. It's not much to look at, but it
+          is certainly adding that 'something' to the site.
+        </p>
+        <form>
+          <label for="feedback">Enter your feedback here:</label><br>
+          <textarea name="feedback" rows="5" cols="40" id="feedback"></textarea>
+          <br><br>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="John Smith"><br><br>
 
-        <input type="submit" value="Submit"><br><br>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="john.smith@email.com"><br><br>
 
-        <label>Shall we move on to the next module?</label><br><br>
-        <input type="radio" name="replyanswer" value="Yes">
-        <label>Yes</label>
+          <input type="submit" value="Submit"><br><br>
 
-        <input type="radio" name="replyanswer" value="No">
-        <label>No</label>
-      </form>
+          <label>Shall we move on to the next module?</label><br><br>
+          <input type="radio" name="replyanswer" value="Yes">
+          <label>Yes</label>
+
+          <input type="radio" name="replyanswer" value="No">
+          <label>No</label>
+        </form>
+      </div>
     </div>
-  </div>
-  
-  <div class="responsive-box">
-    This box will change color when it is scaled to 800 pixels or narrower
-  </div>
-
   </main>
   <footer>
     <p>Copyright 2025</p>
