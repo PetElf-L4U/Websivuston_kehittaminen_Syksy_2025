@@ -1,36 +1,44 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta 
-        name="viewport" 
-        content="width=device-width, initial-scale=1.0"
-        > 
-        <title>Test Web Page</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <main>
-            <header>
-                <h1 title="Hey. This is a test website.">
-                    Test Web Page
-                </h1>
-            </header>
-        </main>
-        <div class="container">
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
-        </div>
-
-         <div class="grid-container">
-            <div class="grid-item">1</div>
-            <div class="grid-item">2</div>
-            <div class="grid-item">3</div>
-            <div class="grid-item">4</div>
-            <div class="grid-item">5</div>
-            <div class="grid-item">6</div>
-        </div>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Design</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 100%;
+      padding: 20px;
+      background-color: lightgray;
+    }
+    .box {
+      width: 100%;
+      padding: 20px;
+      background-color: white;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 480px) {
+      .box {
+        background-color: lightblue;
+      }
+    }
+    @media (min-width: 481px) and (max-width: 768px) {
+      .box {
+        background-color: lightgreen;
+      }
+    }
+    @media (min-width: 769px) {
+      .box {
+        background-color: lightcoral;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">div>
+  </div>
+</body>
 </html>
