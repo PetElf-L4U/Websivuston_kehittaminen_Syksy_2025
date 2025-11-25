@@ -17,32 +17,46 @@
     <h1>
       Welcome to my first web page!
     </h1>
-    <aside>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#quotes">Inspiring Quotes</a></li>
-          <li><a href="#contact">Contact (<i>no functionality at the moment</i>)</a></li>
-        </ul>
-      </nav>
-    </aside>
+
+    <nav class="responsive-nav">
+      <button class="menu-toggle">
+        ☰ Menu
+      </button>
+      <ul class="nav-list">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#quotes">Inspiring Quotes</a></li>
+        <li><a href="#contact">Contact (<i>no functionality at the moment</i>)</a></li>
+      </ul>
+    </nav>
   </header>
 
+  <!--Responsive Container Div-->
+
   <div class="responsive-container">
-    <div class="column">Column 1</div>
-    <div class="column">Column 2</div>
+    <div class="column">A little bit of Column A</div>
+    <div class="column">A little bit of Column B</div>
   </div>
 
+  <!--Vacation Photos-->
+  <div>
+    <h3 class="heading">
+      Vacation Photos
+    </h3>
+    <div class="flex-container">
+      
+      <img title="Vacation photo - Sunset in Glyfáda, Greece, 8/2022." src="styles/images/Kreikan Lomakuva 1 2022.jpg"
+        alt="Sunset" class="responsive-image">
 
-<div>
-  <img 
-  title="Vacation photo - Sunset in Glyfáda, Greece, 8/2022."
-  src="styles/images/Kreikan Lomakuva 2022.jpg" 
-  alt="Vacation Photo from Greece" 
-  class="responsive-image"
-  >
-</div>
+      <img title="Vacation photo - Sea view in Glyfáda, Greece, 8/2022." src="styles/images/Kreikan Lomakuva 2 2022.jpg"
+        alt="Mediterranean sea" class="responsive-image">
 
+      <img title="Vacation photo - Gyros and club sandwich in Glyfáda, Greece, 8/2022."
+        src="styles/images/Kreikan Lomakuva 3 2022.jpeg" alt="Gyros and club sandwich" class="responsive-image">
+
+      <img title="Butterfly, Suomussalmi." src="styles/images/Perhonen.jpg" alt="Butterfly on a flower"
+        class="responsive-image">
+    </div>
+  </div>
   <!--Flex Boxes-->
 
   <main>

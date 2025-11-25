@@ -13,11 +13,37 @@
         padding: 5%;
     }
 
-    aside {
-        float: top;
-        width: 30%;
-        margin: 20px;
+    /*---Responsive Navigation*/
+
+    .responsive-nav .nav-list {
+        width: 100%;
+        display: flex;
+        flex-wrap:nowrap;
+        justify-content:flex-start;
+        list-style: none;
+        border:none;
     }
+    
+    .responsive-nav .menu-toggle {
+        display: none;
+      }
+    
+    @media (max-width: 600px) {
+      .responsive-nav .nav-list {
+        display: none;
+      }
+    .responsive-nav .menu-toggle {
+        display: block;
+        background-color: gold;
+        padding: 10px;
+        border:3px solid grey;
+        border-radius: 5px;
+        cursor:pointer;
+        font-size: 1.3em;
+        color: maroon;
+      }
+    }
+        
 
     /*---Responsive Container*/
 
@@ -27,28 +53,20 @@
     }
     
     .column {
-      flex: 1;
-      padding: 10px;
+        flex: 1;
+        padding: 10px;
+        background-color: lightblue;
+        font-size:1.3em;
+        font-family:Arial, Helvetica, sans-serif;
     }
     
     @media (max-width: 600px) {
       .column {
         flex: 100%;
+        background-color: lightblue;
+        font-size:1.3em;
+        font-family:Arial, Helvetica, sans-serif;
       }
-    }
-
-    /*---Responsive Image*/
-
-    .responsive-image {
-      max-width:10%;
-      height: auto;
-      transition: 0.5s ease-in-out;
-        transition-delay: 0.4s;
-    }
-
-    .responsive-image:hover {
-        scale: 6;
-
     }
 
     /*---Flex Container---*/
@@ -56,8 +74,8 @@
     .flex-container {
         background-color: rgb(40, 40, 40);
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        justify-content:space-between;
+        align-items:center;
     }
 
     .box {
@@ -66,7 +84,20 @@
         font-size: 1.3em;
         background-color: gold;
         padding: 20px;
+        margin:1%;
         text-align: center;
+    }
+
+  /*---Responsive Image*/
+
+    .responsive-image {
+        
+        max-width:22%;
+        height: auto;          
+        border: 1px solid grey;
+        border-radius: 4px;
+        padding: 5px;
+        margin: 1%;
     }
 
     main {
@@ -183,6 +214,7 @@
     li {
         color: whitesmoke;
         font-size: 1.3em;
+        padding-left: 5%;
     }
 
     /*---Paragraphs---*/
@@ -212,9 +244,6 @@
         display: block;
         margin: auto;
         width: 50%;
-        border: 20px solid rgb(145, 145, 145);
-        border-radius: 15px;
-        outline: 3px solid rgb(80, 80, 80);
     }
 
     .filter-image {
