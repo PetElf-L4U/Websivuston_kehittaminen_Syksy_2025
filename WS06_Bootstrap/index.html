@@ -1,356 +1,376 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My First Web Page</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
 
-  <!--Page Contents-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Web Page</title>
 
-  <body>
-    <!--Header of the Page-->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- My Custom CSS-->
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <header>
-      <h1>Welcome to my first web page!</h1>
+<!--Page Contents-->
 
-      <nav class="responsive-nav">
-        <button class="menu-toggle">☰ Menu</button>
-        <ul class="nav-list">
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#quotes">Inspiring Quotes</a></li>
-          <li>
-            <a href="#contact"
-              >Contact (<i>no functionality at the moment</i>)</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <!--Header of the Page-->
 
-    <!--Responsive Container Div-->
+  <header>
+    <h1>Welcome to my first web page!</h1>
 
-    <div class="responsive-container">
-      <div class="column">A little bit of Column A</div>
-      <div class="column">A little bit of Column B</div>
-    </div>
-
-    <!--Vacation Photos-->
-    <div>
-      <h3 class="heading">Vacation Photos</h3>
-      <div class="flex-container">
-        <img
-          title="Vacation photo - Sunset in Glyfáda, Greece, 8/2022."
-          src="styles/images/Kreikan Lomakuva 1 2022.jpg"
-          alt="Sunset"
-          class="responsive-image"
-        />
-
-        <img
-          title="Vacation photo - Sea view in Glyfáda, Greece, 8/2022."
-          src="styles/images/Kreikan Lomakuva 2 2022.jpg"
-          alt="Mediterranean sea"
-          class="responsive-image"
-        />
-
-        <img
-          title="Vacation photo - Gyros and club sandwich in Glyfáda, Greece, 8/2022."
-          src="styles/images/Kreikan Lomakuva 3 2022.jpeg"
-          alt="Gyros and club sandwich"
-          class="responsive-image"
-        />
-
-        <img
-          title="Butterfly, Suomussalmi."
-          src="styles/images/Perhonen.jpg"
-          alt="Butterfly on a flower"
-          class="responsive-image"
-        />
-      </div>
-    </div>
-    <!--Flex Boxes-->
-
-    <main>
-      <div class="responsive-box">
-        This box will change color when it is scaled to 800 pixels or narrower
-      </div>
-
-      <div class="flex-container">
-        <div class="box">
-          Mystery Box
-          <p>What is inside? Beans? Diamonds?</p>
-        </div>
-        <div class="box">
-          Coming Soon
-          <p>This one will be the crown jewel, perhaps.</p>
-        </div>
-        <div class="box">
-          I wonder what this one will be
-          <p>There will be something added here eventually.</p>
-        </div>
-      </div>
-
-      <div class="grid-container">
-        <div class="grid-item">
-          <!--About Me-->
-
-          <section id="about">
-            <h2 class="heading">About Me</h2>
-            <p>
-              Greetings. I'm Petteri, a regular Finnish bloke, currently living
-              in Vantaa. Here, I'm practicing the use of <b>HTML</b> and
-              <b>CSS</b>, by designing an HTML web page. Later, I'll also delve
-              into <b>Javascript</b>. It is interesting, fun and undoubtedly
-              useful! Seeing it all slowly come together is satisfying.
-            </p>
-          </section>
-
-          <!--The animated "Eyeball watching over the site. Don't be spooked.-->
-
-          <div class="animation-box">
-            <div class="iris">
-              <div class="pupil"></div>
-            </div>
-          </div>
-
-          <!--Picture-->
-
-          <figure>
-            <img
-              title="That's me, Petteri."
-              src="styles/images/PE_Image.jpg"
-              alt="Petteri Elf."
-              style="width: 250px; height: auto"
-              class="filter-image"
-            />
-          </figure>
-        </div>
-
-        <!--List of Hobbies-->
-
-        <div class="grid-item">
-          <h2 class="heading">My current hobbies</h2>
-
-          <ul class="pseudo-list" style="list-style-type: square">
-            <li>Playing the piano - self-taught</li>
-            <li>Painting and drawing, traditionally and digitally</li>
-            <li>Studying Greek</li>
-            <li>Various games</li>
-            <li>Walking in nature</li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
           </ul>
-
-          <!--Hyperlink-->
-
-          <h3 class="heading">My current studies</h3>
-          <nav>
-            <p>
-              I'm currently studying business information technology at Laurea
-              university of applied sciences.<br />
-              You can get more information about
-              <a href="https://www.laurea.fi/en/">Laurea</a> from this link.
-            </p>
-          </nav>
-        </div>
-
-        <!--Inline CSS Example-->
-
-        <div class="grid-item">
-          <h3 class="heading">
-            Here I've modified the paragraph using <b>inline CSS</b>
-          </h3>
-          <p style="color: orange; font-size: 2em; font-style: italic">
-            This paragraph displays a few changes done within the HTML element.
-          </p>
-          <p>
-            Head is feeling a bit empty, so I'll just add a bit of rambling
-            filler text.
-          </p>
-          <p>
-            I used to play football. It began around elementary school, where I
-            played with many of my classmates. I look back to this time fondly,
-            where we took part in many tournaments and practice games alike.
-            <br /><br />The training became a bit more demanding when I reached
-            secondary school. We fused with another team, coaching changed, with
-            more intense training and extra rules such as offsides, which seemed
-            quite strange to a 12 year old boy. I also had quite a growth spurt
-            at the time, which made my knees ache, which partially affected my
-            decision to stop. Overall the intensive training all of the sudden
-            ate the fun, more casual feeling of football, so I ended up quitting
-            the hobby. Football is a great sport, albeit I don't really follow
-            or watch it, unlike many sportsfans.
-          </p>
-        </div>
-
-        <!--Blockquotes-->
-        <section id="quotes">
-          <div class="grid-item">
-            <h3 class="heading">Some Inspiring Quotes</h3>
-            <blockquote class="quote">
-              Climb mountains not so the world can see you, but so you can see
-              the world. <br />
-              <b>~ David McCullough Jr.</b>
-            </blockquote>
-            <blockquote class="quote">
-              Always be a first version of yourself and not a second rate
-              version of someone else. <br />
-              <b>~ Judy Garland</b>
-            </blockquote>
-            <blockquote class="quote">
-              Failure I can live with. Not trying is what I can't handle. <br />
-              <b>~ Sanya Richards-Ross</b>
-            </blockquote>
-            <blockquote class="quote">
-              Until you value yourself, you won’t value your time. Until you
-              value your time, you will not do anything with it.<br />
-              <b>~ M. Scott Peck</b>
-            </blockquote>
-            <blockquote class="quote">
-              If you get tired, learn to rest, not to quit. <br />
-              <b>~ Banksy</b>
-            </blockquote>
-            <blockquote class="quote">
-              The best way to get started is to quit talking and begin doing.
-              <br />
-              <b>~ Walt Disney</b>
-            </blockquote>
-            <blockquote class="quote">
-              It is during our darkest moments that we must focus to see the
-              light.<br />
-              <b>~ Aristotle</b>
-            </blockquote>
-            <blockquote class="quote">
-              We can't help everyone, but everyone can help someone.<br />
-              <b>~ Ronald Reagan</b>
-            </blockquote>
-          </div>
-        </section>
-        <!--A Table-->
-
-        <div class="grid-item">
-          <h3 class="heading">My language skills</h3>
-          <p>
-            I've studied a few languages in my life, and, generally speaking, I
-            have enjoyed learning about different cultures. Below, I have tried
-            to evaluate my language skills in a bit of a rambling manner.
-            Simultaneously, I'm practicing the use of <b>tables</b> in my web
-            site.
-            <br />
-          </p>
-          <table class="pseudo-list">
-            <tr>
-              <th>Language</th>
-              <th>Fluency Self-Evaluation</th>
-            </tr>
-            <tr>
-              <td>Finnish</td>
-              <td>
-                My first language, but it can always be improved upon. I wasn't
-                particularly interested in Finnish when I was younger, but have
-                later realized the value of being able to express yourself more
-                coherently and colourfully.
-              </td>
-            </tr>
-            <tr>
-              <td>English</td>
-              <td>
-                I consider myself quite fluent in English, but, as with Finnish,
-                I'm always looking to improve. I have many friends and
-                acquaintances abroad, and I get to practise my skills with them
-                frequently. Much of the media I consume is in English, which
-                helps immensely.
-              </td>
-            </tr>
-            <tr>
-              <td>Swedish</td>
-              <td>
-                Akin to Finnish, I wasn't particularly interested in Swedish. I
-                can appreciate the language and I don't particularly hate it,
-                but it has merely fallen to disuse. I still recognize the
-                basics, but wouldn't really be able to hold a conversation with
-                a Swede.
-              </td>
-            </tr>
-            <tr>
-              <td>French</td>
-              <td>
-                I began it maybe in 4th grade, but it slowly developed into a
-                practice that I wasn't too fond of. I reluctantly pushed through
-                with it until upper secondary school, but haven't used it since
-                graduating. I might still remember the basics, but it has
-                definitely degraded over the years.
-              </td>
-            </tr>
-            <tr>
-              <td>Greek</td>
-              <td>
-                This is the most recent addition. Greek was initially quite
-                peculiar, and I didn't really imagine speaking it one day, but
-                fate brought me together with my spouse. I've been learning
-                Greek, a small piece at a time, nearly every day for about 3
-                years. It is quite a challenging language, but I'm slowly
-                building up the confidence, and the basics. Can't really pass as
-                nothing but a tourist, despite my spouse's encouragement, but a
-                day at a time.
-              </td>
-            </tr>
-          </table>
-        </div>
-
-        <!--A Form-->
-
-        <div class="grid-item">
-          <h3 class="heading">Form</h3>
-          <p>
-            Here are the makings of a form mock up. It's not much to look at,
-            but it is certainly adding that 'something' to the site.
-          </p>
-          <form>
-            <label for="feedback">Enter your feedback here:</label><br />
-            <textarea
-              name="feedback"
-              rows="5"
-              cols="40"
-              id="feedback"
-            ></textarea>
-            <br /><br />
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="John Smith"
-            /><br /><br />
-
-            <label for="email">Email:</label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="john.smith@email.com"
-            /><br /><br />
-
-            <input type="submit" value="Submit" /><br /><br />
-
-            <label>Shall we move on to the next module?</label><br /><br />
-            <input type="radio" name="replyanswer" value="Yes" />
-            <label>Yes</label>
-
-            <input type="radio" name="replyanswer" value="No" />
-            <label>No</label>
-          </form>
         </div>
       </div>
-    </main>
-    <footer>
-      <p>Copyright 2025</p>
-    </footer>
-    <!-- Bootstrap JavaScript (place before closing </body> tag) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    </nav>
+
+    <nav class="responsive-nav">
+      <button class="menu-toggle">☰ Menu</button>
+      <ul class="nav-list">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#quotes">Inspiring Quotes</a></li>
+        <li>
+          <a href="#contact">Contact (<i>no functionality at the moment</i>)</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Responsive Container Div-->
+
+  <div class="responsive-container">
+    <div class="column">A little bit of Column A</div>
+    <div class="column">A little bit of Column B</div>
+  </div>
+
+  <!--BOOTSTRAP SECTION-->
+
+  <div>
+    <h3 class="heading">Bootstrap Related</h3>
+    <!--Bootstrap Button-->
+    <button class="btn btn-primary">Click Me</button>
+
+    <!-- Bootstrap Grid Layout-->
+    <div class="container">
+      <div class="row">
+        <div type=bsdiv class="col-md-4 col-12">Bootstrap</div>
+        <div type=bsdiv class="col-md-4 col-12">Seems useful</div>
+        <div type=bsdiv class="col-md-4 col-12">But I have to look into it a bit more.</div>
+      </div>
+    </div>
+
+  
+    <!-- Bootstrap Alert-->
+    <div class="alert alert-warning" role="alert">
+      This is a warning alert—check it out!
+    </div>
+  </div>
+
+ <!-- Bootstrap Card-->
+
+    <div class="card" style="width: 18rem;">
+      <img src="styles/images/Perhonen.jpg" class="card-img-top" alt="Perhonen">
+      <div class="card-body">
+        <h5 class="card-title">Butterfly</h5>
+        <p class="card-text">Papilio machaon, Suomussalmi</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+
+  <!--Vacation Photos-->
+  <div>
+    <h3 class="heading">Vacation Photos</h3>
+    <div class="flex-container">
+      <img title="Vacation photo - Sunset in Glyfáda, Greece, 8/2022." src="styles/images/Kreikan Lomakuva 1 2022.jpg"
+        alt="Sunset" class="responsive-image" />
+
+      <img title="Vacation photo - Sea view in Glyfáda, Greece, 8/2022." src="styles/images/Kreikan Lomakuva 2 2022.jpg"
+        alt="Mediterranean sea" class="responsive-image" />
+
+      <img title="Vacation photo - Gyros and club sandwich in Glyfáda, Greece, 8/2022."
+        src="styles/images/Kreikan Lomakuva 3 2022.jpeg" alt="Gyros and club sandwich" class="responsive-image" />
+    </div>
+
+    
+  </div>
+
+  <!--Flex Boxes-->
+
+  <main>
+    <div class="responsive-box">
+      This box will change color when it is scaled to 800 pixels or narrower
+    </div>
+
+    <div class="flex-container">
+      <div class="box">
+        Mystery Box
+        <p>What is inside? Beans? Diamonds?</p>
+      </div>
+      <div class="box">
+        Coming Soon
+        <p>This one will be the crown jewel, perhaps.</p>
+      </div>
+      <div class="box">
+        I wonder what this one will be
+        <p>There will be something added here eventually.</p>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <!--About Me-->
+
+        <section id="about">
+          <h2 class="heading">About Me</h2>
+          <p>
+            Greetings. I'm Petteri, a regular Finnish bloke, currently living
+            in Vantaa. Here, I'm practicing the use of <b>HTML</b> and
+            <b>CSS</b>, by designing an HTML web page. Later, I'll also delve
+            into <b>Javascript</b>. It is interesting, fun and undoubtedly
+            useful! Seeing it all slowly come together is satisfying.
+          </p>
+        </section>
+
+        <!--The animated "Eyeball watching over the site. Don't be spooked.-->
+
+        <div class="animation-box">
+          <div class="iris">
+            <div class="pupil"></div>
+          </div>
+        </div>
+
+        <!--Picture-->
+
+        <figure>
+          <img title="That's me, Petteri." src="styles/images/PE_Image.jpg" alt="Petteri Elf."
+            style="width: 250px; height: auto" class="filter-image" />
+        </figure>
+      </div>
+
+      <!--List of Hobbies-->
+
+      <div class="grid-item">
+        <h2 class="heading">My current hobbies</h2>
+
+        <ul class="pseudo-list" style="list-style-type: square">
+          <li>Playing the piano - self-taught</li>
+          <li>Painting and drawing, traditionally and digitally</li>
+          <li>Studying Greek</li>
+          <li>Various games</li>
+          <li>Walking in nature</li>
+        </ul>
+
+        <!--Hyperlink-->
+
+        <h3 class="heading">My current studies</h3>
+        <nav>
+          <p>
+            I'm currently studying business information technology at Laurea
+            university of applied sciences.<br />
+            You can get more information about
+            <a href="https://www.laurea.fi/en/">Laurea</a> from this link.
+          </p>
+        </nav>
+      </div>
+
+      <!--Inline CSS Example-->
+
+      <div class="grid-item">
+        <h3 class="heading">
+          Here I've modified the paragraph using <b>inline CSS</b>
+        </h3>
+        <p style="color: orange; font-size: 2em; font-style: italic">
+          This paragraph displays a few changes done within the HTML element.
+        </p>
+        <p>
+          Head is feeling a bit empty, so I'll just add a bit of rambling
+          filler text.
+        </p>
+        <p>
+          I used to play football. It began around elementary school, where I
+          played with many of my classmates. I look back to this time fondly,
+          where we took part in many tournaments and practice games alike.
+          <br /><br />The training became a bit more demanding when I reached
+          secondary school. We fused with another team, coaching changed, with
+          more intense training and extra rules such as offsides, which seemed
+          quite strange to a 12 year old boy. I also had quite a growth spurt
+          at the time, which made my knees ache, which partially affected my
+          decision to stop. Overall the intensive training all of the sudden
+          ate the fun, more casual feeling of football, so I ended up quitting
+          the hobby. Football is a great sport, albeit I don't really follow
+          or watch it, unlike many sportsfans.
+        </p>
+      </div>
+
+      <!--Blockquotes-->
+      <section id="quotes">
+        <div class="grid-item">
+          <h3 class="heading">Some Inspiring Quotes</h3>
+          <blockquote class="quote">
+            Climb mountains not so the world can see you, but so you can see
+            the world. <br />
+            <b>~ David McCullough Jr.</b>
+          </blockquote>
+          <blockquote class="quote">
+            Always be a first version of yourself and not a second rate
+            version of someone else. <br />
+            <b>~ Judy Garland</b>
+          </blockquote>
+          <blockquote class="quote">
+            Failure I can live with. Not trying is what I can't handle. <br />
+            <b>~ Sanya Richards-Ross</b>
+          </blockquote>
+          <blockquote class="quote">
+            Until you value yourself, you won’t value your time. Until you
+            value your time, you will not do anything with it.<br />
+            <b>~ M. Scott Peck</b>
+          </blockquote>
+          <blockquote class="quote">
+            If you get tired, learn to rest, not to quit. <br />
+            <b>~ Banksy</b>
+          </blockquote>
+          <blockquote class="quote">
+            The best way to get started is to quit talking and begin doing.
+            <br />
+            <b>~ Walt Disney</b>
+          </blockquote>
+          <blockquote class="quote">
+            It is during our darkest moments that we must focus to see the
+            light.<br />
+            <b>~ Aristotle</b>
+          </blockquote>
+          <blockquote class="quote">
+            We can't help everyone, but everyone can help someone.<br />
+            <b>~ Ronald Reagan</b>
+          </blockquote>
+        </div>
+      </section>
+      <!--A Table-->
+
+      <div class="grid-item">
+        <h3 class="heading">My language skills</h3>
+        <p>
+          I've studied a few languages in my life, and, generally speaking, I
+          have enjoyed learning about different cultures. Below, I have tried
+          to evaluate my language skills in a bit of a rambling manner.
+          Simultaneously, I'm practicing the use of <b>tables</b> in my web
+          site.
+          <br />
+        </p>
+        <table class="pseudo-list">
+          <tr>
+            <th>Language</th>
+            <th>Fluency Self-Evaluation</th>
+          </tr>
+          <tr>
+            <td>Finnish</td>
+            <td>
+              My first language, but it can always be improved upon. I wasn't
+              particularly interested in Finnish when I was younger, but have
+              later realized the value of being able to express yourself more
+              coherently and colourfully.
+            </td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>
+              I consider myself quite fluent in English, but, as with Finnish,
+              I'm always looking to improve. I have many friends and
+              acquaintances abroad, and I get to practise my skills with them
+              frequently. Much of the media I consume is in English, which
+              helps immensely.
+            </td>
+          </tr>
+          <tr>
+            <td>Swedish</td>
+            <td>
+              Akin to Finnish, I wasn't particularly interested in Swedish. I
+              can appreciate the language and I don't particularly hate it,
+              but it has merely fallen to disuse. I still recognize the
+              basics, but wouldn't really be able to hold a conversation with
+              a Swede.
+            </td>
+          </tr>
+          <tr>
+            <td>French</td>
+            <td>
+              I began it maybe in 4th grade, but it slowly developed into a
+              practice that I wasn't too fond of. I reluctantly pushed through
+              with it until upper secondary school, but haven't used it since
+              graduating. I might still remember the basics, but it has
+              definitely degraded over the years.
+            </td>
+          </tr>
+          <tr>
+            <td>Greek</td>
+            <td>
+              This is the most recent addition. Greek was initially quite
+              peculiar, and I didn't really imagine speaking it one day, but
+              fate brought me together with my spouse. I've been learning
+              Greek, a small piece at a time, nearly every day for about 3
+              years. It is quite a challenging language, but I'm slowly
+              building up the confidence, and the basics. Can't really pass as
+              nothing but a tourist, despite my spouse's encouragement, but a
+              day at a time.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!--A Form-->
+
+      <div class="grid-item">
+        <h3 class="heading">Form</h3>
+        <p>
+          Here are the makings of a form mock up. It's not much to look at,
+          but it is certainly adding that 'something' to the site.
+        </p>
+        <form>
+          <label for="feedback">Enter your feedback here:</label><br />
+          <textarea name="feedback" rows="5" cols="40" id="feedback"></textarea>
+          <br /><br />
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="John Smith" /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="john.smith@email.com" /><br /><br />
+
+          <input type="submit" value="Submit" /><br /><br />
+
+          <label>Shall we move on to the next module?</label><br /><br />
+          <input type="radio" name="replyanswer" value="Yes" />
+          <label>Yes</label>
+
+          <input type="radio" name="replyanswer" value="No" />
+          <label>No</label>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Copyright 2025</p>
+  </footer>
+  <!-- Bootstrap JavaScript (place before closing </body> tag) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

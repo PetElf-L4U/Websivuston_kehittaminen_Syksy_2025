@@ -12,7 +12,7 @@
         background-image: linear-gradient(to bottom, maroon, black);
         padding: 5%;
     }
-
+   
     /*---Responsive Navigation*/
 
     .responsive-nav .nav-list {
@@ -68,6 +68,37 @@
         font-family:Arial, Helvetica, sans-serif;
       }
     }
+ 
+    /*Boostrap Container*/
+
+.container {
+    background-color:black;
+    color: whitesmoke;
+}
+.row{
+    background-image: linear-gradient(to top, grey, rgb(80, 80, 80));
+}
+div [type=bsdiv] {
+    background-color:rgb(40, 40, 40);
+    border-radius:0;
+}
+.card-body {
+    background-color:black;
+}
+.card {
+    background-color:rgb(40, 40, 40);
+    margin: 2em;
+}
+.btn {
+    background-color: gold;
+    border-color:maroon;
+    color:maroon;
+}
+.btn:hover {
+    background-color: maroon;
+    border-color:gold;
+    color:whitesmoke;
+}
 
     /*---Flex Container---*/
 
@@ -87,6 +118,12 @@
         margin:1%;
         text-align: center;
     }
+    .card {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+    }
+
 
   /*---Responsive Image*/
 
@@ -111,17 +148,13 @@
         color: gold;
     }
 
-    /*---Dividers---*/
-
     div {
-        padding: 10px;
-        margin: 10px;
-        background-color: grey;
+        padding: 1rem; 
+        background-color: grey; 
         border: 3px solid rgb(80, 80, 80);
-        border-radius: 15px;
+        border-radius: 15px; 
         text-align: center;
     }
-
     /*---Grid Container---*/
 
     .grid-container {
@@ -171,9 +204,9 @@
     .iris {
         padding: 5px;
         margin: auto;
-        width: 20px;
-        height: 20px;
-        min-width: 20px;
+        width: 25px;
+        height: 25px;
+        min-width: 25px;
         border-radius: 100%;
         background-color: teal;
         position: absolute;
@@ -182,8 +215,8 @@
     .pupil {
         padding: 5px;
         margin: auto;
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
         min-width: 8px;
         border-radius: 100%;
         background-color: black;
