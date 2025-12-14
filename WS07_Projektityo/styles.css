@@ -8,7 +8,7 @@
 body {
     background-image:linear-gradient(to bottom, black, maroon);
     height: 100vh;
-    margin: 0;
+    margin-top: 100px;
     padding: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -29,6 +29,10 @@ header {
     z-index:1000;
     font-size:1.3em;
 }
+
+.navbar-brand {
+    font-size:1.5em;
+}
 .nav-link:hover {
     color: red;
 }
@@ -37,7 +41,7 @@ header {
 .scroll-watcher-container {
     height:6px;
     position:fixed;
-    top:63px;
+    top:73px;
     z-index:998;
     background-color:black;
     width:100%;
@@ -46,7 +50,7 @@ header {
 .scroll-watcher {
     height:6px;
     position:fixed;
-    top:63px;
+    top:73px;
     z-index:999;
     background-color:red;
     width:100%;
