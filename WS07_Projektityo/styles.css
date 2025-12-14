@@ -2,28 +2,103 @@
 * {
     margin:0px;
     padding:0px;
-    box-sizing: border-box;
 }
 
+
 body {
-    background-image:linear-gradient(to bottom, red, maroon);
-    height: 100%;
+    background-image:linear-gradient(to bottom, black, maroon);
+    height: 100vh;
     margin: 0;
+    padding: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+/*################# HEADER ##################*/
+
 header {
-    text-align: center;
+    background-color:magenta;
 }
 
-/*These are the timeline related changes*/
+/*################# NAVIGATION BAR ##################*/
+
+.navbar {
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    font-size:1.3em;
+}
+.nav-link:hover {
+    color: red;
+}
+
+/*Scroll Watcher - A filling bar when scrolling down the page.*/
+.scroll-watcher-container {
+    height:6px;
+    position:fixed;
+    top:63px;
+    z-index:998;
+    background-color:black;
+    width:100%;
+}
+
+.scroll-watcher {
+    height:6px;
+    position:fixed;
+    top:63px;
+    z-index:999;
+    background-color:red;
+    width:100%;
+    scale: 0 1;
+    transform-origin:left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+    to {scale: 1 1;
+    }
+}
+
+/*################# MAIN CONTENT ##################*/
+
+
+/* ######## The hero image #######*/
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image:url("styles/images/AoE2_SS_1.png");
+
+  /* Set a specific height */
+  height: 60%;
+  background-position: center;
+  background-repeat:non-repeat;
+  background-size:cover;
+  position: relative;
+  margin-top: 10%;
+}
+
+/* Place text in the middle of the image*/
+
+.hero-text {
+  text-align: left;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  padding:10px 20% 10px 20%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color:rgba(0,0,0,0.7);
+}
+
+/*######## TIMELINE ########*/
 
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 100px auto;
-    background-color:rgba(0,0,0,0.3);
+    padding-top: 10px;
+    background-image:linear-gradient(black, maroon);
 }
 
 .container {
@@ -35,17 +110,18 @@ header {
 .container img {
     position:absolute;
     width: 70px;
-    right: -45px;
-    top: 15px;
+    right: -42px;
+    top: 10px;
     z-index:10;
     background-color:black;
-    margin:10px;
-    padding:10px;
+    margin:6px;
+    padding:6px;
     border-radius:50%;
+    border:2px solid white; 
 }
 
 .right-container img {
-    left: -45px;
+    left: -40px;
 }
 
 .left-container {
@@ -60,16 +136,25 @@ header {
     position: absolute;
     width: 6px;
     height: 100%;
-    background: white;
+    background: red;
     top:0;
     left:50%;
     margin-left: -3px;
-    z-index: -1;
+    z-index: 1;
+    animation: moveline 12s linear forwards;
+}
+@keyframes moveline {
+    0% {
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
 }
 
 .text-box {
     padding: 20px 30px;
-    background-color: #fff;
+    background-color: white;
     position: relative;
     border-radius: 6px;
     font-size: 15px; 
@@ -82,10 +167,76 @@ header {
     margin-bottom:15px;
 }
 
+.left-container-arrow {
+    height:0;
+    width:0;
+    position: absolute;
+    top:28px;
+    z-index:1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: -15px;
+}
+
+.right-container-arrow {
+    height:0;
+    width:0;
+    position: absolute;
+    top:28px;
+    z-index:1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+    left: -15px;
+}
+/*Size the timeline for smaller screens with a media query.*/
+
+@media screen and (max-width: 1000px) {
+    .timeline {
+        margin: 70px auto;
+    }
+    /*Positioning the animated line*/
+    .timeline::after {
+        left: 44px;
+    }
+    /*Add some padding, to prevent excessive stretching.*/
+    .container {
+        width:100%;
+        padding-left: 100px;
+        padding-right: 25px;
+    }
+   
+    /*Align the right side containers to the left.*/
+    .right-container {
+        left:0;
+    }
+    /*Flip the position of the images*/
+    .left-container img, .right-container img {
+        left: 3px;
+    }
+    /*Flip the position of the arrows*/
+    .left-container-arrow, .right-container-arrow {
+        border-right: 15px solid white;
+        border-left:0;
+        left: -15px;
+    }
+}
+
+/*############### FOOTER ##################*/
+
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+footer ul {
+    margin: 20px;
+    display:flex;
+    list-style:none;
+    gap:25px;
 }
