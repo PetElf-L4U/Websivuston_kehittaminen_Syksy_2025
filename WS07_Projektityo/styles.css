@@ -131,7 +131,7 @@ body {
     }
 }
 
-#inv {
+[type=inv] {
     background-color:transparent;
 }
 
