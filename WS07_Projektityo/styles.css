@@ -57,6 +57,7 @@ body {
     scale: 0 1;
     transform-origin:left;
     animation: scroll-watcher linear;
+    animation-timeline:scroll(); /*Validator complains about this one, but it is required for the animation. This feature isn't supported by some browsers though.*/  
 }
 
 @keyframes scroll-watcher {
@@ -88,7 +89,6 @@ body {
     height:100%;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 10px;
 }
 .grid-item {
     background-color: rgba(0,0,0,0.7);
@@ -96,6 +96,7 @@ body {
     text-align: left;
     color:white;
 }
+    
 .grid-item h3 {
     text-align: center;
 }
@@ -120,6 +121,7 @@ body {
         grid-template-columns: 100%; /*Switch to 1 column setup on smaller screens*/
     }
 }
+
 /*Make the Big Icons of Ages switch to 2 columns on smaller screens.*/
 @media screen and (max-width:1450px) {
     #big-icons ul{
@@ -283,3 +285,4 @@ footer ul {
     list-style:none;
     gap:25px;
 }
+
