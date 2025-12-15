@@ -6,21 +6,20 @@
 
 
 body {
-    background-image:linear-gradient(to bottom, black, maroon);
+    background-color:black;
+    background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("styles/images/AoE2_SS_2.png");
     height: 100vh;
     margin-top: 100px;
     padding: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+
 }
 
-/*################# HEADER ##################*/
+/*###################### HEADER ######################*/
 
-header {
-    background-color:magenta;
-}
-
-/*################# NAVIGATION BAR ##################*/
+/*################### NAVIGATION BAR ##################*/
 
 .navbar {
     position:fixed;
@@ -40,20 +39,21 @@ header {
 /*Scroll Watcher - A filling bar when scrolling down the page.*/
 .scroll-watcher-container {
     height:6px;
+    width:100%;
     position:fixed;
     top:73px;
     z-index:998;
     background-color:black;
-    width:100%;
+
 }
 
 .scroll-watcher {
     height:6px;
+    width:100%;
     position:fixed;
     top:73px;
     z-index:999;
     background-color:red;
-    width:100%;
     scale: 0 1;
     transform-origin:left;
     animation: scroll-watcher linear;
@@ -65,44 +65,80 @@ header {
     }
 }
 
-/*################# MAIN CONTENT ##################*/
+/*################### MAIN CONTENT #####################*/
 
-
-/* ######## The hero image #######*/
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image:url("styles/images/AoE2_SS_1.png");
-
-  /* Set a specific height */
-  height: 60%;
-  background-position: center;
-  background-repeat:non-repeat;
-  background-size:cover;
-  position: relative;
-  margin-top: 10%;
+/*TEXT BLOCK*/
+.text-block {
+    width:100%;
+    margin:20px auto;
+    padding: 40px 28%;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.7);
 }
 
-/* Place text in the middle of the image*/
-
-.hero-text {
-  text-align: left;
-  position: relative;
-  top: 20%;
-  left: 50%;
-  padding:10px 20% 10px 20%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color:rgba(0,0,0,0.7);
+ @media screen and (max-width:600px) {
+    .text-block {
+        padding-left:100px;
+        padding-right:40px;
+    }
 }
 
-/*######## TIMELINE ########*/
+/*################## GRID CONTAINER #################*/
+
+.grid-container {
+    height:100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+.grid-item {
+    background-color: rgba(0,0,0,0.7);
+    padding:30px;
+    text-align: left;
+    color:white;
+}
+.grid-item h3 {
+    text-align: center;
+}
+
+.grid-item ul {
+    display:flex;
+    gap: 25px;
+    list-style:none;
+    justify-content:center; /*Center the List content*/
+    padding:0 20px;
+}
+
+.grid-item li {
+    display:flex;
+    flex-direction:column;
+    align-items:center; /*Center the texts with Icons*/
+    text-align:center; /*Center the rows of text*/
+}
+
+@media screen and (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: 100%; /*Switch to 1 column setup on smaller screens*/
+    }
+}
+/*Make the Big Icons of Ages switch to 2 columns on smaller screens.*/
+@media screen and (max-width:1450px) {
+    #big-icons ul{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        justify-content:center;
+        align-items:center;
+    }
+}
+
+/*##################### TIMELINE ####################*/
 
 .timeline {
     position: relative;
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 10px auto;
     padding-top: 10px;
-    background-image:linear-gradient(black, maroon);
+    background-image:linear-gradient(black,maroon);
 }
 
 .container {
@@ -227,7 +263,7 @@ header {
     }
 }
 
-/*############### FOOTER ##################*/
+/*##################### FOOTER #######################*/
 
 footer {
     text-align: center;
