@@ -131,6 +131,10 @@ body {
     }
 }
 
+#inv {
+    background-color:transparent;
+}
+
 /*##################### TIMELINE ####################*/
 
 .timeline {
@@ -138,7 +142,7 @@ body {
     max-width: 1200px;
     margin: 10px auto;
     padding-top: 10px;
-    background-image:linear-gradient(black,maroon);
+    background-color:rgb(0,0,0,0.7);
 }
 
 .container {
